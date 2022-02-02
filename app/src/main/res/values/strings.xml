@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NewApplication</string>
+    <string name="mapbox_access_token">
+        pk.eyJ1IjoiYmVybmEyMiIsImEiOiJja3F3MHhxdmQwazBjMnhwcHkwNzhxMzViIn0.JP0f66Vvzv6y7798Cqbs3w
+    </string>
+    <string name="user_location_permission_explanation">This app needs location permissions in order to show its functionality.</string>
+    <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
+    <string name="new_location">New lat: %1$s New longitude: %2$s</string>
+    <string name="clicked_symbol_toast">Symbol clicked</string>
+    <string name="long_clicked_symbol_toast">Symbol long clicked</string>
+    <string name="symbol_listener_instruction_toast">Tap, tap and hold, or tap and drag the icon</string>
+    <string name="button_text">Buttom</string>
+    <string name="search_title">search title</string>
+    <string name="search_hint">fuel station</string>
+</resources>

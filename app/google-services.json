@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "90327379574",
+    "project_id": "fuel-database-f54d5",
+    "storage_bucket": "fuel-database-f54d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90327379574:android:1da2164259309fadbff957",
+        "android_client_info": {
+          "package_name": "com.example.newapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90327379574-3ksq7okj1tge8o9fgp7c5c5lt4htkumo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.newapplication",
+            "certificate_hash": "0a274a916e22f63cedac5235646ac316f03e594a"
+          }
+        },
+        {
+          "client_id": "90327379574-j59mo5uat0nuipt4julg2g68ltlsk220.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCftQ-97TiHx2jg9mAwraatGbsJRQpPMa4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90327379574-j59mo5uat0nuipt4julg2g68ltlsk220.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

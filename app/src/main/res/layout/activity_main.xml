@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:enabled="false"
+        android:text="Start Navigation"
+        android:textColor="?attr/colorButtonNormal"
+        mapbox:layout_constraintBottom_toBottomOf="@+id/mapView"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:layout_constraintStart_toStartOf="parent" />
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        mapbox:layout_constraintBottom_toBottomOf="parent"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:layout_constraintStart_toStartOf="parent"
+        mapbox:layout_constraintTop_toTopOf="parent"
+        mapbox:mapbox_cameraTargetLat="43.6516"
+        mapbox:mapbox_cameraTargetLng="-11.1294"
+        mapbox:mapbox_cameraZoom="11" >
+
+        <!-- Menu Stazione-->
+        <toan.android.floatingactionmenu.FloatingActionsMenu
+            android:id="@+id/Menu_Stazione_Servizio"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|bottom"
+            mapbox:fab_menuIcon="@drawable/fuel_station"
+            mapbox:fab_expandDirection="up"
+            mapbox:fab_addButtonColorNormal="#FFAB00"
+            mapbox:fab_addButtonColorPressed="#FFAB00"
+            android:layout_marginBottom="135dp"
+            android:layout_marginRight="10dp"
+            mapbox:fab_labelStyle="@style/menu_labels_style"
+            >
+
+            <toan.android.floatingactionmenu.FloatingActionButton
+                android:id="@+id/fab_toggle_Agip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                mapbox:fab_title="Agip-Eni"
+
+                />
+
+            <toan.android.floatingactionmenu.FloatingActionButton
+                android:id="@+id/fab_toggle_Q8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                mapbox:fab_title="Q8"/>
+
+            <toan.android.floatingactionmenu.FloatingActionButton
+                android:id="@+id/fab_toggle_Tamoil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                mapbox:fab_title="Tamoil"/>
+
+            <toan.android.floatingactionmenu.FloatingActionButton
+                android:id="@+id/fab_toggle_allstation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                mapbox:fab_title="All Station"/>
+
+        </toan.android.floatingactionmenu.FloatingActionsMenu>
+
+
+        <!-- Menu Tipo Carburante-->
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/recenterbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="20dp"
+            mapbox:fab_icon="@drawable/my_location"
+            mapbox:fab_size="mini"
+
+            >
+
+        </toan.android.floatingactionmenu.FloatingActionButton>
+
+        <toan.android.floatingactionmenu.FloatingActionsMenu
+            android:id="@+id/Menu_Carburanti"
+            mapbox:fab_menuIcon="@drawable/gas_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|bottom|left"
+            android:layout_marginLeft="10dp"
+            mapbox:fab_addButtonColorNormal="#D50000"
+            mapbox:fab_addButtonColorPressed="#D50000"
+            mapbox:fab_labelStyle="@style/menu_labels_style"
+            mapbox:fab_labelsPosition="right"
+            android:layout_marginBottom="85dp"
+            >
+            <toan.android.floatingactionmenu.FloatingActionButton
+                android:id="@+id/fab_toggle_benzina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                mapbox:fab_title="Benzina"/>
+
+            <toan.android.floatingactionmenu.FloatingActionButton
+                android:id="@+id/fab_toggle_gasolio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                mapbox:fab_title="Gasolio"/>
+            <toan.android.floatingactionmenu.FloatingActionButton
+                android:id="@+id/fab_toggle_metano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                mapbox:fab_title="Metano"/>
+            <toan.android.floatingactionmenu.FloatingActionButton
+                android:id="@+id/fab_toggle_gpl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                mapbox:fab_title="GPL"/>
+
+        </toan.android.floatingactionmenu.FloatingActionsMenu>
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
